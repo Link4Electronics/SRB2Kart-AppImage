@@ -9,6 +9,7 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     glu        \
     libdecor   \
+    libgme     \
     sdl2       \
     sdl2_mixer
 
@@ -17,6 +18,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
+make-aur-package discord-rpc
 make-aur-package srb2kart-data
 make-aur-package srb2kart
 
